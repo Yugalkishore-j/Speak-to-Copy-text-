@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lato", sans-serif;
+    background: #66769d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    background-color: #AED9E0;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.button-three {
+    text-align: center;
+    cursor: pointer;
+    font-size: 23px;
+    position: relative;
+    background-color: #FCAB10;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+
+.button-three:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color: #000000;
+}
+
+.button-three:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height:50px;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #000000;
+}
