@@ -19,3 +19,6 @@ function copyDivToClipboard() {
     window.getSelection().removeAllRanges();// to deselect
     alert("Copied the text:")
 }
+function clearText() {
+    document.getElementById("result").innerHTML = "Text is show here";
+}
